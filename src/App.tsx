@@ -216,10 +216,22 @@ export default function App() {
               {[
                 { icon: '✉', val: 'marcosdoncontato@gmail.com' },
                 { icon: '☎', val: '+55 (11) 94014-9674' },
+                { icon: 'B', val: 'behance.net/marcosdondesign', href: 'https://behance.net/marcosdondesign' },
               ].map((c) => (
                 <p key={c.val} style={{ fontSize: 12, color: '#666', margin: 0 }}>
                   <span style={{ marginRight: 6 }}>{c.icon}</span>
-                  {c.val}
+                  {c.href ? (
+                    <a
+                      href={c.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ color: '#666', textDecoration: 'underline' }}
+                    >
+                      {c.val}
+                    </a>
+                  ) : (
+                    c.val
+                  )}
                 </p>
               ))}
             </div>
