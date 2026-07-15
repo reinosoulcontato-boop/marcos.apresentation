@@ -25,6 +25,16 @@ const SKILL_BUBBLES = [
 
 const jobs = [
   {
+    empresa: 'FREELANCE',
+    cargo: 'Criação de websites, identidades visuais, interfaces e materiais gráficos',
+    periodo: '2021 – Atual • São Paulo, Brasil',
+    cor: RED,
+    atividades: [
+      'Criação de websites, identidades visuais, interfaces e materiais gráficos para empresas, profissionais e projetos digitais',
+      'Desenvolvimento de soluções modernas com foco em experiência do usuário, branding e presença digital',
+    ],
+  },
+  {
     empresa: 'RaiaDrogasil',
     cargo: 'Atendente II / Balconista',
     periodo: 'Agosto/2025 – Atual',
