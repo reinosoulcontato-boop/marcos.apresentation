@@ -156,6 +156,7 @@ export default function App() {
 
         {/* profile card */}
         <div
+          className="responsive-profile"
           style={{
             position: 'relative',
             zIndex: 2,
@@ -169,9 +170,9 @@ export default function App() {
           {/* photo */}
           <div
             style={{
-              width: 80,
-              height: 80,
-              borderRadius: '50%',
+              width: 96,
+              height: 96,
+              borderRadius: 20,
               overflow: 'hidden',
               flexShrink: 0,
               border: '3px solid #333',
@@ -181,7 +182,7 @@ export default function App() {
             <img
               src={profilePhoto}
               alt="Marcos Vinicius Gonçalves"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
             />
           </div>
 
@@ -271,6 +272,7 @@ export default function App() {
 
       {/* ── OLÁ + RESUMO ─────────────────────────────────── */}
       <section
+        className="responsive-section"
         style={{
           padding: '40px 36px',
           display: 'grid',
@@ -373,6 +375,7 @@ export default function App() {
 
       {/* ── MAIN SKILLS ──────────────────────────────────── */}
       <section
+        className="responsive-section main-skills-section"
         style={{
           padding: '0 36px 40px',
           display: 'grid',
@@ -597,7 +600,7 @@ export default function App() {
         )}
       </section>
 
-      <footer style={{ borderTop: '1px solid #252525', padding: '20px 36px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <footer className="responsive-footer" style={{ borderTop: '1px solid #252525', padding: '20px 36px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <span style={{ fontSize: 11, color: '#333' }}>Marcos Vinicius Gonçalves — 2026</span>
         <span style={{ fontSize: 11, color: '#2A2A2A' }}>Desenvolvedor Front-end &amp; Designer</span>
       </footer>
