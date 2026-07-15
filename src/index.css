@@ -22,8 +22,49 @@ body {
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
 
-@media (max-width: 680px) {
-  section[style*="grid-template-columns: 1fr 1fr"] {
+@media (max-width: 768px) {
+  .responsive-profile {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+    padding: 24px 18px !important;
+    max-width: 100% !important;
+  }
+
+  .responsive-section {
     grid-template-columns: 1fr !important;
+    padding: 24px 18px !important;
+    gap: 24px !important;
+  }
+
+  .main-skills-section {
+    grid-template-columns: 1fr !important;
+  }
+
+  .responsive-footer {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    padding: 20px 18px !important;
+  }
+}
+
+@media print {
+  body {
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+
+  .print-button {
+    display: none !important;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+
+  * {
+    box-shadow: none !important;
   }
 }

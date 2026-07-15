@@ -264,6 +264,30 @@ export default function App() {
                 </span>
               ))}
             </div>
+            <div style={{ marginTop: 16 }}>
+              <button
+                onClick={() => window.print()}
+                className="print-button"
+                style={{
+                  padding: '10px 18px',
+                  borderRadius: 10,
+                  border: '1px solid #393939',
+                  backgroundColor: '#111',
+                  color: '#fff',
+                  fontSize: 13,
+                  cursor: 'pointer',
+                  transition: 'all 0.15s ease',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#222'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#111'
+                }}
+              >
+                Exportar em PDF
+              </button>
+            </div>
           </div>
         </div>
       </section>
