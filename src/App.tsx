@@ -598,7 +598,7 @@ export default function App() {
       </section>
 
       <footer style={{ borderTop: '1px solid #252525', padding: '20px 36px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <span style={{ fontSize: 11, color: '#333' }}>Marcos Vinicius Gonçalves — 2024</span>
+        <span style={{ fontSize: 11, color: '#333' }}>Marcos Vinicius Gonçalves — 2026</span>
         <span style={{ fontSize: 11, color: '#2A2A2A' }}>Desenvolvedor Front-end &amp; Designer</span>
       </footer>
     </div>
