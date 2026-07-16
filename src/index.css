@@ -88,3 +88,55 @@ body {
     box-shadow: none !important;
   }
 }
+
+/* Floating logos (grayscale, semi-transparent) */
+.floating-logos {
+  position: absolute;
+  right: 18px;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  pointer-events: none;
+  z-index: 3;
+}
+.floating-logos img {
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+  background: transparent;
+  filter: grayscale(100%) opacity(0.65);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+  transition: transform 0.6s ease, opacity 0.25s ease;
+}
+.floating-logos img:hover { transform: translateY(-6px) rotate(-2deg); opacity: 0.9 }
+
+/* Experience card charm */
+.experience-card {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  border-radius: 12px;
+}
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(0,0,0,0.55);
+}
+
+/* Projects section */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+}
+.project-card {
+  padding: 18px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.04));
+  border: 1px solid rgba(255,255,255,0.03);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.project-card img { width: 56px; height: 56px; object-fit: contain; filter: grayscale(100%) opacity(0.6) }
+

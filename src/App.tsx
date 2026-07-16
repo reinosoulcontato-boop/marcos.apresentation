@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import profilePhoto from './imports/image-1.png'
+import logoA from './imports/image.png'
+import logoB from './imports/93a3f42b-9b72-4d02-9cd7-0e13d1c03605.jpg'
 
 const DARK_BG   = '#1A1A1A'
 const CARD_DARK = '#222222'
@@ -114,6 +116,16 @@ function SectionLabel({ children, dot }: { children: React.ReactNode; dot?: stri
       {children}
       {dot && <Dot color={dot} />}
     </h2>
+  )
+}
+
+function FloatingLogos({ logos }: { logos: string[] }) {
+  return (
+    <div className="floating-logos" aria-hidden>
+      {logos.map((l, i) => (
+        <img key={i} src={l} alt={`logo-${i}`} />
+      ))}
+    </div>
   )
 }
 
@@ -550,6 +562,30 @@ export default function App() {
         </div>
       </section>
 
+      {/* Floating logos */}
+      <FloatingLogos logos={[logoA, logoB, profilePhoto]} />
+
+      {/* ── PROJETOS ─────────────────────────────────────── */}
+      <section style={{ padding: '0 36px 24px' }}>
+        <SectionLabel dot={AMBER}>Projetos</SectionLabel>
+        <div className="projects-grid">
+          <div className="project-card">
+            <img src={logoA} alt="Forge / Projeto" />
+            <div>
+              <div style={{ fontWeight: 700, color: '#FFF' }}>Forge Protocol</div>
+              <div style={{ fontSize: 12, color: '#999' }}>Plataforma de treinos com IA</div>
+            </div>
+          </div>
+          <div className="project-card">
+            <img src={logoB} alt="Mar'djoias" />
+            <div>
+              <div style={{ fontWeight: 700, color: '#FFF' }}>Mar'djoias</div>
+              <div style={{ fontSize: 12, color: '#999' }}>Identidade visual e e-commerce</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── EXPERIÊNCIA ──────────────────────────────────── */}
       <section style={{ padding: '0 36px 60px' }}>
         <SectionLabel dot={AMBER}>Experiência</SectionLabel>
@@ -558,12 +594,12 @@ export default function App() {
           {(showAll ? jobs : jobs.slice(0, 3)).map((job) => (
             <div
               key={job.empresa}
+              className="experience-card"
               style={{
                 padding: '20px',
-                borderRadius: 10,
                 backgroundColor: CARD_DARK,
                 border: '1px solid #2A2A2A',
-                borderTop: `3px solid ${job.cor}`,
+                borderTop: `4px solid ${job.cor}`,
               }}
             >
               <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#444', margin: '0 0 4px' }}>
