@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import profilePhoto from './imports/image-1.png'
-import logoA from './imports/image.png'
-import logoB from './imports/93a3f42b-9b72-4d02-9cd7-0e13d1c03605.jpg'
+import logoA from './imports/image-transparent.png'
+import logoB from './imports/93a3f42b-9b72-4d02-9cd7-0e13d1c03605-transparent.png'
 
 const DARK_BG   = '#1A1A1A'
 const CARD_DARK = '#222222'
