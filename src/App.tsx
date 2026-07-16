@@ -60,17 +60,6 @@ const jobs = [
     ],
   },
   {
-    empresa: 'ICESP',
-    cargo: 'Oficial Administrativo',
-    periodo: 'Fev/2022 – Jul/2022',
-    cor: GREEN,
-    atividades: [
-      'Atendimento aos pacientes',
-      'Agendamento de exames',
-      'Organização de agendas médicas',
-    ],
-  },
-  {
     empresa: 'CONFEA',
     cargo: 'Auxiliar Administrativo',
     periodo: 'Nov/2018 – Mar/2020',
