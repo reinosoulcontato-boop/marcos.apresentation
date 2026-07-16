@@ -316,8 +316,11 @@ export default function App() {
           </p>
           <p style={{ fontSize: 13.5, lineHeight: 1.85, color: '#777', margin: '12px 0 0' }}>
             Sou o criador do{' '}
-            <span style={{ color: AMBER, fontWeight: 600 }}>Forge Protocol</span>, plataforma de
-            treinos personalizados com Inteligência Artificial.
+            <span style={{ color: AMBER, fontWeight: 600 }}>Forge Protocol</span> — sistema W12 de
+            gestão para academias (financeiro, check-in, dashboard operacional e módulos
+            complementares) e plataforma com IA para geração personalizada de treinos, planos
+            alimentares e suplementação. Fui responsável por todo o desenvolvimento, design e
+            branding.
           </p>
         </div>
 
@@ -382,8 +385,10 @@ export default function App() {
               </span>
             </div>
             <p style={{ fontSize: 12, color: '#666', margin: 0, lineHeight: 1.6 }}>
-              Plataforma com IA para geração personalizada de treinos, alimentação e suplementação.
-              Responsável por todo o desenvolvimento, design e branding.
+              Sistema W12 de gestão para academias — financeiro, check-in, dashboard operacional
+              e módulos complementares. Inclui plataforma com IA para geração personalizada de
+              treinos, planos alimentares e suplementação. Responsável por todo o desenvolvimento,
+              design e branding.
             </p>
           </div>
         </div>
@@ -544,26 +549,7 @@ export default function App() {
 
       {/* Floating logos removed per user request */}
 
-      {/* ── PROJETOS ─────────────────────────────────────── */}
-      <section style={{ padding: '0 36px 24px' }}>
-        <SectionLabel dot={AMBER}>Projetos</SectionLabel>
-        <div className="projects-grid">
-          <div className="project-card">
-            <div style={{ width: 56, height: 56, borderRadius: 8, background: '#1f1f1f', flexShrink: 0 }} aria-hidden />
-            <div>
-              <div style={{ fontWeight: 700, color: '#FFF' }}>Forge Protocol</div>
-              <div style={{ fontSize: 12, color: '#999' }}>Plataforma de treinos com IA</div>
-            </div>
-          </div>
-          <div className="project-card">
-            <div style={{ width: 56, height: 56, borderRadius: 8, background: '#1f1f1f', flexShrink: 0 }} aria-hidden />
-            <div>
-              <div style={{ fontWeight: 700, color: '#FFF' }}>Mar'djoias</div>
-              <div style={{ fontSize: 12, color: '#999' }}>Identidade visual e e-commerce</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Projetos removidos por solicitação do usuário */}
 
       {/* ── EXPERIÊNCIA ──────────────────────────────────── */}
       <section style={{ padding: '0 36px 60px' }}>
