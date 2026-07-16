@@ -560,14 +560,14 @@ export default function App() {
         <SectionLabel dot={AMBER}>Projetos</SectionLabel>
         <div className="projects-grid">
           <div className="project-card">
-            <img src={logoA} alt="Forge / Projeto" />
+            <div style={{ width: 56, height: 56, borderRadius: 8, background: '#1f1f1f', flexShrink: 0 }} aria-hidden />
             <div>
               <div style={{ fontWeight: 700, color: '#FFF' }}>Forge Protocol</div>
               <div style={{ fontSize: 12, color: '#999' }}>Plataforma de treinos com IA</div>
             </div>
           </div>
           <div className="project-card">
-            <img src={logoB} alt="Mar'djoias" />
+            <div style={{ width: 56, height: 56, borderRadius: 8, background: '#1f1f1f', flexShrink: 0 }} aria-hidden />
             <div>
               <div style={{ fontWeight: 700, color: '#FFF' }}>Mar'djoias</div>
               <div style={{ fontSize: 12, color: '#999' }}>Identidade visual e e-commerce</div>
