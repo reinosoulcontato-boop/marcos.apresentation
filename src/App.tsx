@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import profilePhoto from './imports/image-1.png'
-import logoA from './imports/image-transparent.png'
-import logoB from './imports/93a3f42b-9b72-4d02-9cd7-0e13d1c03605-transparent.png'
+// removed logo imports (deleted by user)
 
 const DARK_BG   = '#1A1A1A'
 const CARD_DARK = '#222222'
@@ -119,15 +118,7 @@ function SectionLabel({ children, dot }: { children: React.ReactNode; dot?: stri
   )
 }
 
-function FloatingLogos({ logos }: { logos: string[] }) {
-  return (
-    <div className="floating-logos" aria-hidden>
-      {logos.map((l, i) => (
-        <img key={i} src={l} alt={`logo-${i}`} />
-      ))}
-    </div>
-  )
-}
+// Floating logos removed
 
 export default function App() {
   const [showAll, setShowAll] = useState(false)
@@ -562,8 +553,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Floating logos */}
-      <FloatingLogos logos={[logoA, logoB, profilePhoto]} />
+      {/* Floating logos removed per user request */}
 
       {/* ── PROJETOS ─────────────────────────────────────── */}
       <section style={{ padding: '0 36px 24px' }}>
