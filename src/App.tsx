@@ -314,17 +314,13 @@ export default function App() {
             Olá!
           </h2>
           <p style={{ fontSize: 13.5, lineHeight: 1.85, color: '#777', margin: 0 }}>
-            Profissional com experiência em atendimento ao cliente, negociação comercial e
-            desenvolvimento de soluções digitais.
+            Profissional com experiência em atendimento ao cliente, negociação comercial e relacionamento com clientes, unindo comunicação, tecnologia e visão de negócios para gerar resultados.
           </p>
           <p style={{ fontSize: 13.5, lineHeight: 1.85, color: '#777', margin: '12px 0 0' }}>
-            Atuo como Brand Designer, Front-end Developer e fundador do <span style={{ color: AMBER, fontWeight: 600 }}>Forge Protocol</span>,
-            conduzindo projetos desde a prospecção e negociação até o desenvolvimento e entrega final.
+            Atuo como Brand Designer, Front-end Developer e fundador do <span style={{ color: AMBER, fontWeight: 600 }}>Forge Protocol</span>, conduzindo projetos desde a prospecção, levantamento de necessidades e negociação até o desenvolvimento, apresentação e entrega final.
           </p>
           <p style={{ fontSize: 13.5, lineHeight: 1.85, color: '#777', margin: '12px 0 0' }}>
-            Tenho facilidade em entender necessidades, transformar problemas em soluções e construir
-            relacionamentos de longo prazo. Busco oportunidades onde possa unir tecnologia, design
-            e visão de negócios para gerar resultados.
+            Tenho facilidade em criar conexões, compreender o que cada cliente realmente precisa e transformar demandas em soluções de alto valor. Ao longo da minha trajetória, desenvolvi habilidades em vendas consultivas, gestão de projetos, branding e desenvolvimento de produtos digitais, sempre com foco em relacionamento, confiança e resultados de longo prazo.
           </p>
         </div>
 
