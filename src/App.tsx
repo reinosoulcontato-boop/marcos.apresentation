@@ -547,18 +547,33 @@ export default function App() {
         <SectionLabel dot={GREEN}>Resultados</SectionLabel>
         <div style={{ display: 'grid', gap: 8 }}>
           {[
-            '🚀 Fundador e criador do Forge Protocol.',
-            '🎨 Mais de 20 projetos entregues entre branding, identidade visual, websites e desenvolvimento web.',
-            '🤝 Desenvolvimento de identidade visual para Fiber Flux.',
-            '🏎️ Projeto de branding para Bertolino Motors (Itália).',
-            '🌿 Desenvolvimento de materiais gráficos para StonedShop.',
-            '👕 Identidade visual para Low Life Streetwear.',
-            '💻 Desenvolvimento de websites modernos e interfaces responsivas.',
-            '🎯 Gestão completa dos projetos desde briefing até entrega.',
-            '📈 Experiência em negociação comercial, atendimento consultivo e relacionamento com clientes.',
+            'Fundador e criador do Forge Protocol.',
+            'Mais de 20 projetos entregues entre branding, identidade visual, websites e desenvolvimento web.',
+            'Desenvolvimento de identidade visual para Fiber Flux.',
+            'Projeto de branding para Bertolino Motors (Itália).',
+            'Desenvolvimento de materiais gráficos para StonedShop.',
+            'Identidade visual para Low Life Streetwear.',
+            'Desenvolvimento de websites modernos e interfaces responsivas.',
+            'Gestão completa dos projetos desde briefing até entrega.',
+            'Experiência em negociação comercial, atendimento consultivo e relacionamento com clientes.',
           ].map((r) => (
-            <div key={r} style={{ padding: '10px 14px', borderRadius: 10, backgroundColor: '#252525', border: '1px solid #2E2E2E', color: '#DDD', fontSize: 13 }}>
-              {r}
+            <div
+              key={r}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 12,
+                padding: '10px 14px',
+                borderRadius: 10,
+                backgroundColor: '#252525',
+                border: '1px solid #2E2E2E',
+                color: '#DDD',
+                fontSize: 13,
+                borderLeft: `4px solid ${GREEN}`,
+              }}
+            >
+              <span style={{ width: 10, height: 10, borderRadius: '50%', backgroundColor: GREEN, flexShrink: 0 }} aria-hidden />
+              <div style={{ lineHeight: 1.35 }}>{r}</div>
             </div>
           ))}
         </div>
