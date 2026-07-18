@@ -202,7 +202,7 @@ export default function App() {
                   Gonçalves
                 </h1>
                 <p style={{ fontSize: 12, color: '#666', margin: '4px 0 0', fontWeight: 500 }}>
-                  Desenvolvedor Front-end &amp; Designer
+                  Front-end Developer • Brand Designer • Product Builder
                 </p>
               </div>
               <span
@@ -314,15 +314,17 @@ export default function App() {
             Olá!
           </h2>
           <p style={{ fontSize: 13.5, lineHeight: 1.85, color: '#777', margin: 0 }}>
-            Profissional com experiência em atendimento ao cliente, negociação e desenvolvimento
-            de soluções digitais. Atuo como Designer Gráfico, Desenvolvedor Front-end e fundador
-            do <span style={{ color: AMBER, fontWeight: 600 }}>Forge Protocol</span>, conduzindo
-            projetos desde a prospecção e negociação até a entrega final.
+            Profissional com experiência em atendimento ao cliente, negociação comercial e
+            desenvolvimento de soluções digitais.
           </p>
           <p style={{ fontSize: 13.5, lineHeight: 1.85, color: '#777', margin: '12px 0 0' }}>
-            Tenho facilidade em entender necessidades de clientes, transformar problemas em
-            soluções e construir relacionamentos de longo prazo. Busco oportunidades onde possa
-            unir tecnologia, comunicação e visão de negócios para gerar resultados.
+            Atuo como Brand Designer, Front-end Developer e fundador do <span style={{ color: AMBER, fontWeight: 600 }}>Forge Protocol</span>,
+            conduzindo projetos desde a prospecção e negociação até o desenvolvimento e entrega final.
+          </p>
+          <p style={{ fontSize: 13.5, lineHeight: 1.85, color: '#777', margin: '12px 0 0' }}>
+            Tenho facilidade em entender necessidades, transformar problemas em soluções e construir
+            relacionamentos de longo prazo. Busco oportunidades onde possa unir tecnologia, design
+            e visão de negócios para gerar resultados.
           </p>
         </div>
 
@@ -344,7 +346,7 @@ export default function App() {
               'Negociação Comercial', 'Atendimento Consultivo', 'Comunicação', 'Branding',
               'Gestão de Projetos', 'Product Thinking', 'CRM', 'Vendas', 'Relacionamento com Clientes',
               'Desenvolvimento de Produto', 'Gestão de Clientes', 'Resolução de Problemas',
-              'Planejamento', 'Organização', 'Liderança',
+              'Planejamento', 'Organização', 'Liderança', 'Customer Success', 'Business Development', 'Product Strategy'
             ].map((area) => (
               <span
                 key={area}
@@ -372,7 +374,7 @@ export default function App() {
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
-              <span style={{ fontSize: 14 }}>⚡</span>
+              <span style={{ display: 'inline-block', width: 10, height: 10, borderRadius: '50%', backgroundColor: AMBER, flexShrink: 0 }} aria-hidden />
               <span style={{ fontWeight: 700, color: '#FFF', fontSize: 14 }}>Forge Protocol</span>
               <span
                 style={{
@@ -416,7 +418,7 @@ export default function App() {
               <p style={{ fontSize: 12, color: '#777', margin: '0 0 8px', fontWeight: 700 }}>Tecnologias</p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
                 {[
-                  'HTML','CSS','JavaScript','TypeScript','React','Next.js','Tailwind CSS','Supabase','Git','Figma','Photoshop','Illustrator'
+                  'HTML','CSS','JavaScript','TypeScript','React','Next.js','TailwindCSS','Supabase','Git','Figma','Photoshop','Illustrator'
                 ].map((t) => (
                   <span key={t} style={{ padding: '6px 10px', borderRadius: 8, backgroundColor: '#252525', border: '1px solid #2E2E2E', color: '#777', fontSize: 12 }}>{t}</span>
                 ))}
@@ -426,7 +428,7 @@ export default function App() {
               <p style={{ fontSize: 12, color: '#777', margin: '0 0 8px', fontWeight: 700 }}>Competências</p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
                 {[
-                  'Negociação','Comunicação','Atendimento','Branding','UX/UI','Product Thinking','Gestão de Projetos','Resolução de Problemas','Organização','Trabalho em Equipe','Liderança','Relacionamento com Clientes','Prospecção','Vendas'
+                  'Negociação Comercial','Vendas','Prospecção','Relacionamento com Clientes','Atendimento Consultivo','Customer Success','Business Development','Comunicação','Liderança','Gestão de Projetos','Product Thinking','Product Strategy','Branding','UX/UI','Organização','Resolução de Problemas','Trabalho em Equipe'
                 ].map((c) => (
                   <span key={c} style={{ padding: '6px 10px', borderRadius: 8, backgroundColor: '#252525', border: '1px solid #2E2E2E', color: '#777', fontSize: 12 }}>{c}</span>
                 ))}
