@@ -27,12 +27,16 @@ const SKILL_BUBBLES = [
 const jobs = [
   {
     empresa: 'FREELANCE',
-    cargo: 'Criação de websites, identidades visuais, interfaces e materiais gráficos',
+    cargo: 'Designer Gráfico & Desenvolvedor Front-end (Freelance)',
     periodo: '2021 – Atual • São Paulo, Brasil',
     cor: RED,
     atividades: [
-      'Criação de websites, identidades visuais, interfaces e materiais gráficos para empresas, profissionais e projetos digitais',
-      'Desenvolvimento de soluções modernas com foco em experiência do usuário, branding e presença digital',
+      'Desenvolvimento de websites institucionais e interfaces responsivas com foco em usabilidade',
+      'Criação de identidades visuais, branding e materiais gráficos para clientes variados',
+      'Levantamento de requisitos, elaboração de propostas e negociação comercial',
+      'Gestão completa de projetos: planejamento, execução, testes e entrega',
+      'Atendimento consultivo e manutenção do relacionamento com clientes',
+      'Implementação Front-end, integração com APIs e otimização de performance',
     ],
   },
   {
@@ -41,10 +45,11 @@ const jobs = [
     periodo: 'Agosto/2025 – Atual',
     cor: AMBER,
     atividades: [
-      'Atendimento consultivo aos clientes',
-      'Orientação sobre medicamentos',
-      'Operação de caixa e controle de validade',
-      'Reposição de mercadorias e metas comerciais',
+      'Atendimento consultivo a clientes em ambiente de alto fluxo',
+      'Operação de caixa, controle de estoque e verificação de validade de produtos',
+      'Organização operacional e suporte em processos internos',
+      'Cumprimento de metas e colaboração com a equipe para alcance de objetivos comerciais',
+      'Resolução ágil de problemas com foco na satisfação do cliente',
     ],
   },
   {
@@ -53,10 +58,10 @@ const jobs = [
     periodo: 'Maio/2023 – Agosto/2025',
     cor: BLUE,
     atividades: [
-      'Admissão e cadastro de pacientes',
-      'Atendimento em pronto-socorro',
-      'Conferência de contas hospitalares',
-      'Organização do fluxo hospitalar',
+      'Admissão e cadastro de pacientes com atenção a protocolos de saúde',
+      'Atendimento em pronto-socorro em situações de alta pressão',
+      'Conferência e suporte administrativo de documentação hospitalar',
+      'Colaboração com equipes multiprofissionais para organização do fluxo',
     ],
   },
   {
@@ -65,9 +70,9 @@ const jobs = [
     periodo: 'Nov/2018 – Mar/2020',
     cor: PURPLE,
     atividades: [
-      'Organização documental',
-      'Apoio em processos licitatórios',
-      'Controle de arquivos',
+      'Organização documental e controle de arquivos',
+      'Apoio em processos administrativos e rotinas internas',
+      'Suporte para demandas de controle e protocolo',
     ],
   },
 ]
@@ -309,18 +314,15 @@ export default function App() {
             Olá!
           </h2>
           <p style={{ fontSize: 13.5, lineHeight: 1.85, color: '#777', margin: 0 }}>
-            Profissional com experiência em atendimento ao público, rotinas administrativas e
-            ambiente hospitalar, atualmente na RaiaDrogasil. Paralelamente, desenvolvo projetos
-            como Web Designer, Designer Gráfico e Desenvolvedor Front-end, criando interfaces
-            modernas, identidades visuais e aplicações web.
+            Profissional com experiência em atendimento ao cliente, negociação e desenvolvimento
+            de soluções digitais. Atuo como Designer Gráfico, Desenvolvedor Front-end e fundador
+            do <span style={{ color: AMBER, fontWeight: 600 }}>Forge Protocol</span>, conduzindo
+            projetos desde a prospecção e negociação até a entrega final.
           </p>
           <p style={{ fontSize: 13.5, lineHeight: 1.85, color: '#777', margin: '12px 0 0' }}>
-            Sou o criador do{' '}
-            <span style={{ color: AMBER, fontWeight: 600 }}>Forge Protocol</span> — sistema W12 de
-            gestão para academias (financeiro, check-in, dashboard operacional e módulos
-            complementares) e plataforma com IA para geração personalizada de treinos, planos
-            alimentares e suplementação. Fui responsável por todo o desenvolvimento, design e
-            branding.
+            Tenho facilidade em entender necessidades de clientes, transformar problemas em
+            soluções e construir relacionamentos de longo prazo. Busco oportunidades onde possa
+            unir tecnologia, comunicação e visão de negócios para gerar resultados.
           </p>
         </div>
 
@@ -335,13 +337,14 @@ export default function App() {
               margin: '0 0 14px',
             }}
           >
-            Áreas de interesse
+            Business Skills
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
             {[
-              'Desenvolvimento Web', 'Web Design', 'Design Gráfico',
-              'UI/UX Design', 'Identidade Visual', 'Front-end',
-              'Tecnologia', 'Produtos Digitais', 'Marketing Digital',
+              'Negociação Comercial', 'Atendimento Consultivo', 'Comunicação', 'Branding',
+              'Gestão de Projetos', 'Product Thinking', 'CRM', 'Vendas', 'Relacionamento com Clientes',
+              'Desenvolvimento de Produto', 'Gestão de Clientes', 'Resolução de Problemas',
+              'Planejamento', 'Organização', 'Liderança',
             ].map((area) => (
               <span
                 key={area}
@@ -385,10 +388,11 @@ export default function App() {
               </span>
             </div>
             <p style={{ fontSize: 12, color: '#666', margin: 0, lineHeight: 1.6 }}>
-              Sistema W12 de gestão para academias — financeiro, check-in, dashboard operacional
-              e módulos complementares. Inclui plataforma com IA para geração personalizada de
-              treinos, planos alimentares e suplementação. Responsável por todo o desenvolvimento,
-              design e branding.
+              Idealizador e responsável pela gestão do produto, estratégia comercial e desenvolvimento
+              completo da plataforma. O sistema W12 integra gestão financeira, check-in, dashboard
+              operacional e módulos para academias, além de uma plataforma com IA para geração de
+              treinos, planos alimentares e suplementação. Atuei em ideação, UI/UX, desenvolvimento
+              front-end, branding, pesquisa de mercado e validação com clientes.
             </p>
           </div>
         </div>
@@ -407,36 +411,27 @@ export default function App() {
       >
         <div>
           <SectionLabel dot={AMBER}>Main skills</SectionLabel>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14 }}>
-            {SKILL_BUBBLES.map((s) => (
-              <div
-                key={s.id}
-                title={s.id}
-                style={{
-                  width: 56,
-                  height: 56,
-                  borderRadius: '50%',
-                  backgroundColor: s.bg,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontWeight: 700,
-                  fontSize: 13,
-                  color: s.light ? '#1A1A1A' : '#FFFFFF',
-                  flexShrink: 0,
-                  boxShadow: '0 2px 10px rgba(0,0,0,0.3)',
-                  fontFamily: "'Plus Jakarta Sans', sans-serif",
-                  letterSpacing: '-0.02em',
-                }}
-              >
-                {s.label}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+            <div>
+              <p style={{ fontSize: 12, color: '#777', margin: '0 0 8px', fontWeight: 700 }}>Tecnologias</p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+                {[
+                  'HTML','CSS','JavaScript','TypeScript','React','Next.js','Tailwind CSS','Supabase','Git','Figma','Photoshop','Illustrator'
+                ].map((t) => (
+                  <span key={t} style={{ padding: '6px 10px', borderRadius: 8, backgroundColor: '#252525', border: '1px solid #2E2E2E', color: '#777', fontSize: 12 }}>{t}</span>
+                ))}
               </div>
-            ))}
-          </div>
-          <div style={{ marginTop: 10, display: 'flex', flexWrap: 'wrap', gap: 4 }}>
-            {SKILL_BUBBLES.map((s) => (
-              <span key={s.id} style={{ fontSize: 11, color: '#444' }}>{s.id}</span>
-            ))}
+            </div>
+            <div>
+              <p style={{ fontSize: 12, color: '#777', margin: '0 0 8px', fontWeight: 700 }}>Competências</p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+                {[
+                  'Negociação','Comunicação','Atendimento','Branding','UX/UI','Product Thinking','Gestão de Projetos','Resolução de Problemas','Organização','Trabalho em Equipe','Liderança','Relacionamento com Clientes','Prospecção','Vendas'
+                ].map((c) => (
+                  <span key={c} style={{ padding: '6px 10px', borderRadius: 8, backgroundColor: '#252525', border: '1px solid #2E2E2E', color: '#777', fontSize: 12 }}>{c}</span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 
@@ -543,6 +538,40 @@ export default function App() {
                 {f.status}
               </span>
             </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── RESULTADOS ───────────────────────────────────── */}
+      <section style={{ padding: '0 36px 24px' }}>
+        <SectionLabel dot={GREEN}>Resultados</SectionLabel>
+        <div style={{ display: 'grid', gap: 8 }}>
+          {[
+            '🚀 Fundador e criador do Forge Protocol.',
+            '🎨 Mais de 20 projetos entregues entre branding, identidade visual, websites e desenvolvimento web.',
+            '🤝 Desenvolvimento de identidade visual para Fiber Flux.',
+            '🏎️ Projeto de branding para Bertolino Motors (Itália).',
+            '🌿 Desenvolvimento de materiais gráficos para StonedShop.',
+            '👕 Identidade visual para Low Life Streetwear.',
+            '💻 Desenvolvimento de websites modernos e interfaces responsivas.',
+            '🎯 Gestão completa dos projetos desde briefing até entrega.',
+            '📈 Experiência em negociação comercial, atendimento consultivo e relacionamento com clientes.',
+          ].map((r) => (
+            <div key={r} style={{ padding: '10px 14px', borderRadius: 10, backgroundColor: '#252525', border: '1px solid #2E2E2E', color: '#DDD', fontSize: 13 }}>
+              {r}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── PROJETOS ─────────────────────────────────────── */}
+      <section style={{ padding: '0 36px 24px' }}>
+        <SectionLabel dot={AMBER}>Projetos</SectionLabel>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+          {[
+            'Forge Protocol','Fiber Flux','Bertolino Motors','StonedShop','Low Life Streetwear','Guadalupe Stickers','Maria Vitória Advocacia','Mard Joias','Kairós Design','RNS Studio'
+          ].map((p) => (
+            <span key={p} style={{ padding: '8px 12px', borderRadius: 8, backgroundColor: '#252525', border: '1px solid #2E2E2E', color: '#777', fontSize: 13 }}>{p}</span>
           ))}
         </div>
       </section>
